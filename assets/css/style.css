@@ -1,0 +1,53 @@
+:root {}
+
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+header {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    display: inline;
+}
+
+content {
+    background-color: orange;
+}
+
+footer {
+    background-color: darkred;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navigationRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sectionTitle {
+    background-color: pink;
+}
+
+.sectionContent {
+    background-color: blue;
+}
