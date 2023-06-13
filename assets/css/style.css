@@ -1,7 +1,6 @@
 :root {
-    --dark-gray: #f1f4f7;
     --lightblue: #a2f6fd;
-    box-sizing: border-box;
+    --pink: #ff00ff;
 }
 
 body {
@@ -21,10 +20,11 @@ header {
 nav li,
 #contactme li {
     display: inline;
+    font-family: 'Montserrat', sans-serif;
 }
 
-content {
-    background-color: var(--dark-gray);
+nav li {
+    font-size: 1.2em;
 }
 
 a:visited,
@@ -35,7 +35,7 @@ a:link {
 
 #work a:visited,
 #work a:link {
-    color: fuchsia;
+    color: var(--pink);
 }
 
 footer {
@@ -45,7 +45,8 @@ footer {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -63,32 +64,32 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0px 10px;
 }
 
 .myname {
+    font-family: 'Pacifico', cursive;
     font-size: 2em
 }
 
-.sectionTitle {
-    /* background-color: pink; */
-}
-
-.sectionContent {
-    /* border-color: var(rgb(223, 13, 234)); */
-}
-
-.sectionWork {
-    background-color: ;
-}
-
-.sectionContactme {
-    background-color: orange;
-}
-
-.subtitle {
+.headerImage {
     background-image: url(../images/background.jpg);
     background-size: cover;
     height: 100px;
+    width: 100%;
+}
+
+.subtitle {
+    font-family: 'Pacifico', cursive;
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    z-index: 5;
+    top: 85px;
+    right: 20px;
+    position: absolute;
 }
 
 .myimage {
@@ -107,10 +108,29 @@ section {
     border-style: solid;
 }
 
+.imageTitle {
+    background-color: var(--pink);
+    font-family: 'Cardo', serif;
+    height: 40px;
+    width: 120px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    z-index: 5;
+    bottom: 60px;
+    left: 12px;
+    position: relative;
+}
+
 .workGrid {
     margin-top: 30px;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+
+#contactInfo {
+    align-self: flex-end;
 }
