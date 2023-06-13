@@ -1,4 +1,8 @@
-:root {}
+:root {
+    --dark-gray: #f1f4f7;
+    --lightblue: #a2f6fd;
+    box-sizing: border-box;
+}
 
 body {
     font-size: 16px;
@@ -14,21 +18,35 @@ header {
     flex-direction: column;
 }
 
-nav li {
+nav li,
+#contactme li {
     display: inline;
 }
 
 content {
-    background-color: orange;
+    background-color: var(--dark-gray);
+}
+
+a:visited,
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#work a:visited,
+#work a:link {
+    color: fuchsia;
 }
 
 footer {
-    background-color: darkred;
+    background-color: var(--lightblue);
+    font-size: 12px;
+    text-align: center;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 1.5em;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
@@ -36,18 +54,63 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .navigationRow {
+    background-color: var(--lightblue);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.myname {
+    font-size: 2em
 }
 
 .sectionTitle {
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .sectionContent {
-    background-color: blue;
+    /* border-color: var(rgb(223, 13, 234)); */
+}
+
+.sectionWork {
+    background-color: ;
+}
+
+.sectionContactme {
+    background-color: orange;
+}
+
+.subtitle {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 100px;
+}
+
+.myimage {
+    max-width: 100px;
+    border-color: var(--lightblue);
+
+}
+
+.featuredImage {
+    max-width: 638px;
+    border-style: solid;
+}
+
+.workImage {
+    max-width: 300px;
+    border-style: solid;
+}
+
+.workGrid {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
